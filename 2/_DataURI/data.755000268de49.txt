@@ -1,0 +1,1 @@
+chrome-extension://aoabjfoanlljmgnohepbkimcekolejjn/content_script.js
