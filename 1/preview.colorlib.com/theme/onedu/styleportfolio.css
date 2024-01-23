@@ -1,26 +1,30 @@
-.checkbox-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .checkbox-label {
-            margin-right: 10px;
-        }
-
-        .progress-container {
+.progress-container {
             width: 300px;
             height: 20px;
-            background-color: #eee;
+            background-color: #ddd;
             border-radius: 10px;
-            overflow: hidden;
             margin-bottom: 20px;
+            overflow: hidden;
         }
 
         .progress-bar {
             height: 100%;
             width: 0;
-            background-color: #4CAF50;
             border-radius: 10px;
-            transition: width 0.3s ease;
+            background-color: #3498db;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .progress-label {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .progress-container:nth-child(odd) .progress-bar {
+            background-color: #e74c3c;
+        }
+
+        .progress-container:nth-child(3n) .progress-bar {
+            background-color: #2ecc71;
         }
