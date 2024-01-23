@@ -132,84 +132,42 @@
 <div class="section-tittle text-center mb-40">
     <h2>Portfolio</h2>
    <div class="container1">
-        <!-- 10 Checkboxes -->
-        <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-     
-        <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Click Me</label>
+         <label for="myCheckbox">Click Me</label>
+        <label for="myCheckbox">Click Me</label>
+        <label for="myCheckbox">Click Me</label>
+        <label for="myCheckbox">Click Me</label>
 
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-      <label>
-            <input type="checkbox" id="checkbox1" class="checkbox">
-            <span class="custom-checkbox"></span> Python
-        </label>
-
-     
-        <!-- Repeat the above label structure for checkboxes 2 to 10 -->
-
-        <!-- 5 Progress Bars -->
-        <div class="progress-container">
-            <div class="progress-bar">
-                <div class="progress-value" id="progress1"></div>
-            </div>
-            <!-- Repeat the above progress-bar structure for progress bars 2 to 5 -->
+        <div id="progress-bar-container">
+            <div id="progress-bar1"></div>
+        </div>
+       <div id="progress-bar-container">
+            <div id="progress-bar2"></div>
+        </div>
+       <div id="progress-bar-container">
+            <div id="progress-bar3"></div>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle checkbox click events and update progress bars
-        const checkboxes = document.querySelectorAll('.checkbox');
-        const progressBars = document.querySelectorAll('.progress-value');
+        // JavaScript to handle checkbox click event and update progress bar
+        const checkbox = document.getElementById('myCheckbox');
+        const progressBar = document.getElementById('progress-bar1');
 
-        checkboxes.forEach((checkbox, index) => {
-            checkbox.addEventListener('change', () => {
-                // Reset all progress bars
-                progressBars.forEach((progressBar) => {
-                    progressBar.style.width = '0';
-                });
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                progressBar1.style.width = '10%';
+            } else {
+                progressBar1.style.width = '0';
+            }
+        });
 
-                // Update the selected progress bar
-                progressBars[index].style.width = '25%';
-            });
+        if (checkbox.checked) {
+                progressBar2.style.width = '10%';
+            } else {
+                progressBar2.style.width = '0';
+            }
         });
     </script>
     
