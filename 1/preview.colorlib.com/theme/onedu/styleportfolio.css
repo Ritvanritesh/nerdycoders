@@ -1,0 +1,46 @@
+ body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #progress-bar-container {
+            width: 300px;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        #progress-bar {
+            width: 0;
+            height: 30px;
+            background-color: #4caf50;
+            transition: width 0.3s ease-in-out;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-color: #2980b9;
+        }
