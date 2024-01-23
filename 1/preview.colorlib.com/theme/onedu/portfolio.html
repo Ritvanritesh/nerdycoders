@@ -130,41 +130,37 @@
 <div class="col-lg-12">
 
 <div class="section-tittle text-center mb-40">
-    <h2>Portfolio</h2>
-   <div class="checkbox-container">
-        <label class="checkbox-label" for="checkbox1">
-            <input type="checkbox" id="checkbox1" onclick="updateProgressBar(1)"> Python
-        </label>
-        <div class="progress-container">
-            <div id="progressBar1" class="progress-bar"></div>
-        </div>
+    <h2>Your Portfolio</h2>
+   <div class="progress-container">
+        <div id="progressBar1" class="progress-bar"></div>
+        <div class="progress-label">Programming Languages</div>
     </div>
 
-    <div class="checkbox-container">
-        <label class="checkbox-label" for="checkbox2">
-            <input type="checkbox" id="checkbox2" onclick="updateProgressBar(2)"> HTML
-        </label>
-        <div class="progress-container">
-            <div id="progressBar2" class="progress-bar"></div>
-        </div>
+    <div class="progress-container">
+        <div id="progressBar2" class="progress-bar"></div>
+        <div class="progress-label">Web Development</div>
     </div>
 
-    <div class="checkbox-container">
-        <label class="checkbox-label" for="checkbox3">
-            <input type="checkbox" id="checkbox3" onclick="updateProgressBar(3)"> CSS
-        </label>
-        <div class="progress-container">
-            <div id="progressBar3" class="progress-bar"></div>
-        </div>
+    <div class="progress-container">
+        <div id="progressBar3" class="progress-bar"></div>
+        <div class="progress-label">App-Development</div>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressBar4" class="progress-bar"></div>
+        <div class="progress-label">AI</div>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressBar5" class="progress-bar"></div>
+        <div class="progress-label">ML</div>
     </div>
 
     <script>
-        function updateProgressBar(checkboxNumber) {
-            const progressBar = document.getElementById(`progressBar${checkboxNumber}`);
-            progressBar.style.width = `${25 * 1}%`;
-        }
+        // You can update the width of each progress bar using JavaScript based on your requirements.
+        document.getElementById("progressBar1").style.width = "50%";
+        document.getElementById("progressBar2").style.width = "50%";
     </script>
-
     
 
 
