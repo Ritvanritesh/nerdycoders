@@ -46,10 +46,10 @@
 <li><a href="index.html">Home</a></li>
 <li><a href="E:\nerdycoders\3\preview.colorlib.com\theme\onedu\courses.html">Browse Courses</a></li>
 <li><a href="E:\nerdycoders\4\preview.colorlib.com\theme\onedu\about.html">About</a></li>
-<li><a href="#">Blog</a>
+<!-- <li><a href="#">Blog</a>
 <ul class="submenu">
 <li><a href="blog.html">Blog</a></li>
-<li><a href="blog_details.html">Blog Details</a></li>
+<li><a href="blog_details.html">Blog Details</a></li> -->
 <li><a href="elements.html">Element</a></li>
 </ul>
 </li>
@@ -131,45 +131,40 @@
 
 <div class="section-tittle text-center mb-40">
     <h2>Portfolio</h2>
-   <div class="container1">
-        <input type="checkbox" id="myCheckbox">
-        <label for="myCheckbox">Click Me</label>
-         <label for="myCheckbox">Click Me</label>
-        <label for="myCheckbox">Click Me</label>
-        <label for="myCheckbox">Click Me</label>
-        <label for="myCheckbox">Click Me</label>
+   <div class="checkbox-container">
+        <label class="checkbox-label" for="checkbox1">
+            <input type="checkbox" id="checkbox1" onclick="updateProgressBar(1)"> Python
+        </label>
+        <div class="progress-container">
+            <div id="progressBar1" class="progress-bar"></div>
+        </div>
+    </div>
 
-        <div id="progress-bar-container">
-            <div id="progress-bar1"></div>
+    <div class="checkbox-container">
+        <label class="checkbox-label" for="checkbox2">
+            <input type="checkbox" id="checkbox2" onclick="updateProgressBar(2)"> HTML
+        </label>
+        <div class="progress-container">
+            <div id="progressBar2" class="progress-bar"></div>
         </div>
-       <div id="progress-bar-container">
-            <div id="progress-bar2"></div>
-        </div>
-       <div id="progress-bar-container">
-            <div id="progress-bar3"></div>
+    </div>
+
+    <div class="checkbox-container">
+        <label class="checkbox-label" for="checkbox3">
+            <input type="checkbox" id="checkbox3" onclick="updateProgressBar(3)"> CSS
+        </label>
+        <div class="progress-container">
+            <div id="progressBar3" class="progress-bar"></div>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle checkbox click event and update progress bar
-        const checkbox = document.getElementById('myCheckbox');
-        const progressBar = document.getElementById('progress-bar1');
-
-        checkbox.addEventListener('change', function() {
-            if (checkbox.checked) {
-                progressBar1.style.width = '10%';
-            } else {
-                progressBar1.style.width = '0';
-            }
-        });
-
-        if (checkbox.checked) {
-                progressBar2.style.width = '10%';
-            } else {
-                progressBar2.style.width = '0';
-            }
-        });
+        function updateProgressBar(checkboxNumber) {
+            const progressBar = document.getElementById(`progressBar${checkboxNumber}`);
+            progressBar.style.width = `${25 * 1}%`;
+        }
     </script>
+
     
 
 
