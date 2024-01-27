@@ -25,3 +25,25 @@ table {
       text-decoration: underline;
       color:rgb(88,78,141);
     }
+
+/* body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    } */
+
+    #imageEditor {
+      margin: 50px auto;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+    }
