@@ -47,3 +47,16 @@ body {
       margin: 20px auto;
       border: 1px solid #ddd;
     }
+.class{
+    color: white;
+    background: rgb(165 99 215);
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+      }
+
+.ip{
+    padding: 10px;
+    /* border: black; */
+    border-radius: 1000px;
+  }
