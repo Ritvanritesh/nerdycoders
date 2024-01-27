@@ -47,7 +47,7 @@ body {
       margin: 20px auto;
       border: 1px solid #ddd;
     }
-.button12{
+button12{
     color: white;
     background: rgb(165 99 215);
     padding: 10px;
@@ -55,7 +55,7 @@ body {
     margin-top: 10px;
       }
 
-.ip{
+ip{
     padding: 10px;
     /* border: black; */
     border-radius: 1000px;
