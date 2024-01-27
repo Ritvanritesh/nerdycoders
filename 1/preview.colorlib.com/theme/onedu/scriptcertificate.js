@@ -5,7 +5,7 @@ function editImage() {
 
       // Load a base PNG image (replace with your image URL)
       const baseImage = new Image();
-      baseImage.src = 'certificate_template.png'; // Replace with the path to your base PNG image
+      baseImage.src = 'certificate_template.PNG'; // Replace with the path to your base PNG image
 
       baseImage.onload = function() {
         // Draw the base image onto the canvas
@@ -23,7 +23,7 @@ function editImage() {
 
     function downloadImage() {
       const editedCanvas = document.getElementById('editedCanvas');
-      const dataUrl = editedCanvas.toDataURL('certificate_template.png');
+      const dataUrl = editedCanvas.toDataURL('certificate_template.PNG');
 
       // Create a temporary link element
       const link = document.createElement('a');
