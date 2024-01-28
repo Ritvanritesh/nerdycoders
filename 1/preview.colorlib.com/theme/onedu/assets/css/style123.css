@@ -33,30 +33,16 @@ body {
       margin: 0;
       padding: 0;
     }
-
-    #imageEditor {
+#imageEditor {
       margin: 50px auto;
       width: 1000px;
       background-color: #fff;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
-    canvas {
+canvas {
       display: block;
       margin: 20px auto;
       border: 1px solid #ddd;
     }
-button12{
-    color: white;
-    background: rgb(165 99 215);
-    padding: 10px;
-    border: none;
-    margin-top: 10px;
-      }
 
-ip{
-    padding: 10px;
-    /* border: black; */
-    border-radius: 1000px;
-  }
