@@ -133,17 +133,19 @@
 
 <div class="section-tittle text-center mb-40">
     <h2>Get Your Certificate</h2>
-    <div id="imageEditor">
+      <div id="imageEditor">
     <h2>Image Editor</h2>
-    <label for="textInput" class="ip">Enter Your name:</label>
-    <input type="text" id="textInput" placeholder="Type your text here">
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="Your Name">
     <br>
-    <button onclick="editImage() class="button12">Generate Certificate</button>
-    <canvas id="editedCanvas" width="798" height="613"></canvas>
+    <label for="workInput">Enter Your Work:</label>
+    <input type="text" id="workInput" placeholder="Your Work">
     <br>
-    <button onclick="downloadImage()  class="button12">Download Image</button>
+    <button onclick="editImage()">Edit Image</button>
+    <canvas id="editedCanvas" width="1000" height="800"></canvas>
+    <br>
+    <button onclick="downloadImage()">Download Image</button>
   </div>
-    
   
     
 
