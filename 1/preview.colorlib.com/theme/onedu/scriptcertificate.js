@@ -1,5 +1,6 @@
 function editImage() {
-      const textInput = document.getElementById('textInput').value;
+      const nameInput = document.getElementById('nameInput').value;
+      const workInput = document.getElementById('workInput').value;
       const editedCanvas = document.getElementById('editedCanvas');
       const context = editedCanvas.getContext('2d');
 
@@ -16,8 +17,9 @@ function editImage() {
         context.fillStyle = 'black';
         context.textAlign = 'center';
 
-        // Draw the user-entered text on the canvas
-        context.fillText(textInput, editedCanvas.width / 2, editedCanvas.height / 2);
+        // Draw the user-entered name and work on the canvas
+        context.fillText(nameInput, editedCanvas.width / 2, editedCanvas.height / 2 - 20);
+        context.fillText(workInput, editedCanvas.width / 2, editedCanvas.height / 2 + 20);
       };
     }
 
