@@ -1,0 +1,40 @@
+*{
+  background-color:black;
+  color:white;
+}
+
+body {
+      background-color: black;
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
+
+    button, input[type="submit"] {
+      background-color: white;
+      color: black;
+    }
+
+    .header-btn2 {
+      background-color: white;
+      color: black;
+    }
+
+    .footer-social i {
+      color: white;
+    }
+
+    .footer-form input[type="email"] {
+      background-color: black;
+      color: white;
+    }
+
+    .footer-form .email_icon {
+      background-color: white;
+    }
+
+    .footer-copy-right p {
+      color: white;
+    }
